@@ -1,14 +1,18 @@
 $(document).ready(function () {
 
 
-    function showResults (data){
+   function showResults (data) {
         var items= data.items;
-        for (var i=0; i < items.length; i++ ){
-          $('.results').append("<div>"+ items[i].snippet.title+"</div>")
+        for(var i = 0; i < items.length; i++) {
+            $('.results').append('<div> <img src="' + items[i].snippet.thumbnails.medium.url + '"> <p>'  + items[i].snippet.title + '</p></div');
         }
-       
-        
-    }
+
+
+   }
+  
+
+
+
    
     function getVideos(searchTerm){
         var params = {
@@ -26,6 +30,7 @@ $(document).ready(function () {
     }
 $('#search-form').submit(function (event){
     alert('submitted');
+    $('.results').html('');
     var searchTerm = $('#search-text').val();
     alert(searchTerm);
     getVideos(searchTerm);

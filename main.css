@@ -1,20 +1,21 @@
-*{
-    box-sizing: border-box;
-}
 
 
 
 
 
 h1{
-    font-family: 'Barrio', cursive;
-    font-size:30px;
+    font-family: 'Crimson Text', serif;
+    font-size:60px;
+    text-align:center;
+
     }
 
 body{
-    background-color: #DAF7A6;
+    background-color: white;
 }
 
-results{
-    
+.results{
+    font-size:20px;
+    padding:30px;
+    font-family:'Crimson Text', serif;
 }
