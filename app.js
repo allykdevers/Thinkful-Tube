@@ -4,7 +4,7 @@ $(document).ready(function () {
    function showResults (data) {
         var items= data.items;
         for(var i = 0; i < items.length; i++) {
-            $('.results').append('<div> <img src="' + items[i].snippet.thumbnails.medium.url + '"> <p>'  + items[i].snippet.title + '</p></div');
+            $('.results').append('<div> <a href="http://www.youtube.com/watch?v='+items[i].id.videoId+'"><img src="' + items[i].snippet.thumbnails.medium.url + '"></a> <p>'  + items[i].snippet.title + '</p></div');
         }
 
 
